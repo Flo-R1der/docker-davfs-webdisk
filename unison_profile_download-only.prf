@@ -1,5 +1,5 @@
 # Roots of the synchronization
-root = /mnt/source
+root = /mnt/local
 root = /mnt/webdrive
 
 # Log actions
@@ -12,7 +12,11 @@ batch = true
 times = true
 owner = true
 group = true
-prefer = newer
+#prefer = newer
+prefer = /mnt/webdrive
+force = /mnt/webdrive
+nocreation = /mnt/webdrive
+nodeletion = /mnt/webdrive
 
 # Ignore 
 ignore = Name temp.*
